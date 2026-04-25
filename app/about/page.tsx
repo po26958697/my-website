@@ -65,6 +65,102 @@ export default function About() {
           </p>
         </section>
 
+        {/* 服務內容 */}
+        <section className="flex flex-col gap-6 border-t pt-12" style={{ borderColor: "#1B2D5A1A" }}>
+          <Badge
+            variant="outline"
+            className="w-fit text-xs tracking-widest uppercase border-none px-0"
+            style={{ color: "#D4A843", background: "transparent" }}
+          >
+            服務內容
+          </Badge>
+          <h2 className="text-2xl font-bold tracking-tight">我能幫你做什麼</h2>
+          <div className="flex flex-col md:flex-row gap-4">
+            <div
+              className="flex flex-col gap-3 flex-1 rounded-sm p-5"
+              style={{ backgroundColor: "#FFFFFF" }}
+            >
+              <p className="text-sm font-semibold" style={{ color: "#1B2D5A" }}>
+                一對一策略諮詢
+              </p>
+              <p className="text-sm leading-relaxed" style={{ opacity: 0.65 }}>
+                從你的現況出發，找到交易系統的卡點。
+                帶走一份看得懂、做得到的行動清單。
+              </p>
+            </div>
+            <div
+              className="flex flex-col gap-3 flex-1 rounded-sm p-5"
+              style={{ backgroundColor: "#FFFFFF" }}
+            >
+              <p className="text-sm font-semibold" style={{ color: "#1B2D5A" }}>
+                交易系統建構
+              </p>
+              <p className="text-sm leading-relaxed" style={{ opacity: 0.65 }}>
+                把模糊的進出場直覺，翻譯成有條件、可量化、
+                能嚴格執行的規則框架。
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/services"
+            className="text-sm font-medium w-fit"
+            style={{ color: "#D4A843" }}
+          >
+            查看完整服務內容 →
+          </Link>
+        </section>
+
+        {/* 合作案例 */}
+        <section className="flex flex-col gap-6 border-t pt-12" style={{ borderColor: "#1B2D5A1A" }}>
+          <Badge
+            variant="outline"
+            className="w-fit text-xs tracking-widest uppercase border-none px-0"
+            style={{ color: "#D4A843", background: "transparent" }}
+          >
+            合作案例
+          </Badge>
+          <h2 className="text-2xl font-bold tracking-tight">混亂是怎麼被理清的</h2>
+          <div className="flex flex-col md:flex-row gap-4">
+            <div
+              className="flex flex-col gap-3 flex-1 rounded-sm p-5"
+              style={{ backgroundColor: "#FFFFFF" }}
+            >
+              <p className="text-xs font-medium tracking-wide" style={{ color: "#D4A843" }}>
+                設計師 / 個人品牌
+              </p>
+              <p className="text-sm font-semibold" style={{ color: "#1B2D5A" }}>
+                從接案轉品牌的設計師
+              </p>
+              <p className="text-sm leading-relaxed" style={{ opacity: 0.65 }}>
+                問題不在作品集，在定位。重新定位後詢問品質明顯提升，
+                客戶不再問「能不能算便宜」。
+              </p>
+            </div>
+            <div
+              className="flex flex-col gap-3 flex-1 rounded-sm p-5"
+              style={{ backgroundColor: "#FFFFFF" }}
+            >
+              <p className="text-xs font-medium tracking-wide" style={{ color: "#D4A843" }}>
+                自媒體 / Podcast
+              </p>
+              <p className="text-sm font-semibold" style={{ color: "#1B2D5A" }}>
+                想規模化的 Podcaster
+              </p>
+              <p className="text-sm leading-relaxed" style={{ opacity: 0.65 }}>
+                聽眾破萬、收入為零。釐清核心受眾後，
+                首次付費工作坊十二人報名，轉換率超出預期。
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/cases"
+            className="text-sm font-medium w-fit"
+            style={{ color: "#D4A843" }}
+          >
+            查看完整案例 →
+          </Link>
+        </section>
+
         {/* 核心金句卡 */}
         <section>
           <Card className="border-0 shadow-none" style={{ backgroundColor: "#1B2D5A" }}>

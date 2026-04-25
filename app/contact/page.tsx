@@ -50,7 +50,7 @@ export default function Contact() {
                 其他的，諮詢的時候一起釐清。
               </p>
               <div className="w-full border-t pt-6" style={{ borderColor: "#FFFFFF18" }}>
-                <div className="grid grid-cols-3 gap-4 text-center mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mb-6">
                   {[
                     { label: "諮詢時長", value: "60 分鐘" },
                     { label: "形式", value: "視訊 1 對 1" },
