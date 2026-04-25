@@ -1,37 +1,19 @@
 import type { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Layers, Shield, ArrowRight } from "lucide-react";
+import { TrendingUp, Compass, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "關於軍師｜市場軍師 Remi",
   description:
-    "Web 開發者出身的交易策略顧問。將程式邏輯引入交易系統，把模糊的市場直覺轉化為可執行的演算法與風險管理機制。",
+    "長線價值投資者出身的策略顧問。幫助投資者建立可執行的交易系統，幫助台灣個人創業者找到正確的市場方向。",
 };
-
-const services = [
-  {
-    icon: Users,
-    title: "一對一策略諮詢",
-    desc: "從你的現況出發，找到交易系統的真實卡點。帶走一份可立即執行的行動清單，不是理論，是下週就能用的決策框架。",
-  },
-  {
-    icon: Layers,
-    title: "交易系統建構",
-    desc: "把模糊的進出場直覺，翻譯成有條件、可量化、可嚴格執行的規則框架。從感覺交易，進化到系統交易。",
-  },
-  {
-    icon: Shield,
-    title: "風險控管框架",
-    desc: "設定每筆交易的最大風險上限、倉位計算邏輯、停損觸發條件。把保護資金變成自動化習慣，不靠意志力。",
-  },
-];
 
 const whyMe = [
   {
-    title: "系統架構師的執著",
-    body: "寫過夠多系統，我知道邊界條件有多重要。交易系統也一樣——你沒有定義清楚的每一個情況，市場都會替你定義，而且通常是最殘酷的那個版本。",
+    title: "投資者的執著",
+    body: "做過夠多交易，我知道邊界條件有多重要。你沒有定義清楚的每一個情況，市場都會替你定義——而且通常是最殘酷的那個版本。你對停損的定義模糊，它就替你定義；你對加碼的條件不清楚，情緒就替你決定。",
   },
   {
     title: "概率框架，不是預測框架",
@@ -39,7 +21,7 @@ const whyMe = [
   },
   {
     title: "虧損過，所以知道問題在哪",
-    body: "我不是從教科書學交易的。我是從帳戶裡少掉的數字學的。那些虧損讓我知道：問題不在市場，在系統。更準確地說，在沒有系統。",
+    body: "我不是從教科書學投資的。是從帳戶裡少掉的數字學的。那些虧損讓我知道：問題不在市場，在系統。更準確地說，在沒有系統。",
   },
 ];
 
@@ -63,107 +45,145 @@ export default function About() {
             市場不給情緒發獎金，<br />只給紀律發報酬。
           </h1>
           <p className="text-lg leading-relaxed" style={{ color: "#F5F4F0", opacity: 0.75 }}>
-            結合 Web 開發者的邏輯嚴謹性與法人級交易紀律，致力於將複雜市場數據轉化為可執行的策略。
-          </p>
-          <p className="text-base leading-relaxed" style={{ color: "#F5F4F0", opacity: 0.5 }}>
-            這不是一句激勵格言。這是我用虧損換來的作業系統。
+            我是 Remi。結合長線價值投資思維與系統化策略，
+            幫助投資者跨越階層、幫助創業者找到正確的市場方向。
           </p>
         </div>
       </section>
 
-      {/* ── Section 2：背景敘事（純白底） */}
+      {/* ── Section 2：我的故事（純白底） */}
       <section style={{ backgroundColor: "#FFFFFF" }}>
         <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
-              背景
+              我的故事
             </p>
             <h2 className="text-3xl font-bold tracking-tight">
-              從寫程式到看盤：系統思維的遷移
+              從投資者到顧問：一段關於紀律的學習
             </h2>
           </div>
+
           <div className="flex flex-col gap-5">
-            <p className="text-base leading-[1.9]" style={{ opacity: 0.72 }}>
-              我的起點是 Web 開發。程式設計教會我一件事：系統不會說謊，邏輯不接受例外。
-              一段代碼要麼跑得通，要麼跑不通，沒有「差不多」的空間。
+            <p className="text-base leading-[1.9]" style={{ opacity: 0.75 }}>
+              我不是從教科書學投資的。我是從一次又一次的「感覺不錯應該能漲」開始的，
+              然後慢慢學到一件事：感覺不值錢，系統才值錢。
             </p>
-            <p className="text-base leading-[1.9]" style={{ opacity: 0.72 }}>
-              當我把這套思維帶進交易市場，我才看清楚大多數虧損的真正原因：
-              不是分析能力不足，是「例外」太多。每一個「這次感覺不一樣」，
-              都是在系統裡埋一個 bug。
+            <p className="text-base leading-[1.9]" style={{ opacity: 0.75 }}>
+              過去五年，我的資產從 200 萬成長到 400 萬。這不是因為我找到了什麼神奇的選股公式，
+              而是因為我花了很長的時間，把「我覺得這支不錯」，換成了一套有條件、有節點、
+              可以重複執行的投資框架——在情緒最差的時候，還是能照著走。
             </p>
-            <p className="text-base leading-[1.9]" style={{ opacity: 0.72 }}>
-              所以我做了一件對工程師來說很自然的事：
-              把「我感覺」換成「當條件 A + B 同時成立，執行動作 C」。
-              把模糊的市場直覺，翻譯成可被檢驗、可被量化、可被嚴格執行的交易規則。
+            <p className="text-base leading-[1.9]" style={{ opacity: 0.75 }}>
+              我一直相信，投資是普通人少數能透過紀律改變階層的方式。不是靠運氣，不是靠內線，
+              是靠一套比市場上大多數人多想一步的系統。這個信念讓我開始想：
+              這套東西能不能幫到別人？
+            </p>
+            <p className="text-base leading-[1.9]" style={{ opacity: 0.75 }}>
+              我接觸過很多投資者，問題幾乎都不是不努力——他們研究線圖、讀財報、跟著各種觀點操作，
+              但就是賺不到穩定的報酬。少的不是資訊，是一套在市場最亂的時候仍能執行的框架。
+              那個框架，就是我在幫他們建立的東西。
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── Section 3：服務內容（暖灰底，三欄 Card） */}
+      {/* ── Section 3：我能幫誰（暖灰底，雙軌） */}
       <section style={{ backgroundColor: "#F5F4F0" }}>
         <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
-              服務內容
+              我能幫誰
             </p>
-            <h2 className="text-3xl font-bold tracking-tight">我能幫你做什麼</h2>
+            <h2 className="text-3xl font-bold tracking-tight">兩種困境，同一個解法核心</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {services.map(({ icon: Icon, title, desc }) => (
-              <Card
-                key={title}
-                className="border-0 shadow-sm flex flex-col gap-0 w-full"
-                style={{ backgroundColor: "#FFFFFF" }}
-              >
-                <CardContent className="flex flex-col gap-4 pt-7 pb-7">
-                  <div
-                    className="w-10 h-10 rounded-sm flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: "#1B2D5A10" }}
-                  >
-                    <Icon size={20} style={{ color: "#D4A843" }} strokeWidth={1.5} />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-base font-bold" style={{ color: "#1B2D5A" }}>
-                      {title}
-                    </h3>
-                    <p className="text-sm leading-relaxed" style={{ opacity: 0.65 }}>
-                      {desc}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {/* 軌道 A：投資者 */}
+            <Card className="border-0 shadow-sm w-full" style={{ backgroundColor: "#FFFFFF" }}>
+              <CardContent className="flex flex-col gap-5 pt-7 pb-7">
+                <div
+                  className="w-10 h-10 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#1B2D5A10" }}
+                >
+                  <TrendingUp size={20} style={{ color: "#D4A843" }} strokeWidth={1.5} />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
+                    投資者 / 存股者
+                  </p>
+                  <h3 className="text-xl font-bold" style={{ color: "#1B2D5A" }}>
+                    你在市場裡卡住了
+                  </h3>
+                </div>
+                <p className="text-sm leading-relaxed" style={{ opacity: 0.68 }}>
+                  你有在投資，但報酬不穩定、情緒影響決策、
+                  不知道問題出在哪裡。感覺每次都差一點，但說不清楚差在哪。
+                </p>
+                <div className="flex flex-col gap-2 pt-1">
+                  <p className="text-xs font-semibold tracking-wide" style={{ color: "#1B2D5A" }}>
+                    我幫你做的事
+                  </p>
+                  <ul className="flex flex-col gap-1.5">
+                    {[
+                      "建立可執行的交易系統",
+                      "釐清風險框架與倉位邏輯",
+                      "把感覺換成有條件的規則",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm" style={{ opacity: 0.68 }}>
+                        <span style={{ color: "#D4A843", flexShrink: 0 }}>—</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* 軌道 B：創業者 */}
+            <Card className="border-0 shadow-sm w-full" style={{ backgroundColor: "#FFFFFF" }}>
+              <CardContent className="flex flex-col gap-5 pt-7 pb-7">
+                <div
+                  className="w-10 h-10 rounded-sm flex items-center justify-center"
+                  style={{ backgroundColor: "#1B2D5A10" }}
+                >
+                  <Compass size={20} style={{ color: "#D4A843" }} strokeWidth={1.5} />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
+                    個人創業者 / 自媒體
+                  </p>
+                  <h3 className="text-xl font-bold" style={{ color: "#1B2D5A" }}>
+                    你不缺努力，缺方向
+                  </h3>
+                </div>
+                <p className="text-sm leading-relaxed" style={{ opacity: 0.68 }}>
+                  你有在做行銷，但不知道自己的市場定位在哪、
+                  為什麼受眾沒在增長。做了很多，但好像每件事都只做到一半。
+                </p>
+                <div className="flex flex-col gap-2 pt-1">
+                  <p className="text-xs font-semibold tracking-wide" style={{ color: "#1B2D5A" }}>
+                    我幫你做的事
+                  </p>
+                  <ul className="flex flex-col gap-1.5">
+                    {[
+                      "找到市場定位與差異化方向",
+                      "設計可執行的行銷路徑",
+                      "先想清楚，再開始動",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm" style={{ opacity: 0.68 }}>
+                        <span style={{ color: "#D4A843", flexShrink: 0 }}>—</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
           </div>
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-2 text-sm font-semibold w-fit transition-opacity hover:opacity-70"
-            style={{ color: "#1B2D5A" }}
-          >
-            查看完整服務說明 <ArrowRight size={14} />
-          </Link>
         </div>
       </section>
 
-      {/* ── Section 4：使命宣言（深靛藍底） */}
-      <section style={{ backgroundColor: "#1B2D5A" }}>
-        <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-6">
-          <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
-            軍師使命
-          </p>
-          <p className="text-2xl sm:text-3xl font-bold leading-snug" style={{ color: "#F5F4F0" }}>
-            幫助受困於心理素質的投資者，透過系統化的風險管理機制，翻轉虧損，
-            建立專業的法人交易紀律。
-          </p>
-          <p className="text-base leading-relaxed" style={{ color: "#F5F4F0", opacity: 0.65 }}>
-            不是叫你「更努力研究線圖」，不是叫你「相信自己」。
-            是幫你建立一套即使情緒崩潰，系統仍能正常運作的交易架構。
-          </p>
-        </div>
-      </section>
-
-      {/* ── Section 5：為什麼是我（純白底） */}
+      {/* ── Section 4：為什麼是我（純白底） */}
       <section style={{ backgroundColor: "#FFFFFF" }}>
         <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-10">
           <div className="flex flex-col gap-2">
@@ -171,7 +191,7 @@ export default function About() {
               為什麼是我
             </p>
             <h2 className="text-3xl font-bold tracking-tight">
-              因為我懂代碼的嚴謹，更懂市場的冷酷。
+              因為我走過你現在的位置。
             </h2>
           </div>
           <div className="flex flex-col gap-8">
@@ -179,13 +199,15 @@ export default function About() {
               <div key={item.title} className="flex gap-5">
                 <span
                   className="text-3xl font-bold tabular-nums leading-none shrink-0 pt-1"
-                  style={{ color: "#D4A843", opacity: 0.35 }}
+                  style={{ color: "#D4A843", opacity: 0.3 }}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-base font-bold">{item.title}</h3>
-                  <p className="text-sm leading-[1.85]" style={{ opacity: 0.65 }}>{item.body}</p>
+                  <p className="text-sm leading-[1.85]" style={{ opacity: 0.65 }}>
+                    {item.body}
+                  </p>
                 </div>
               </div>
             ))}
@@ -193,25 +215,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── Section 6：經歷（暖灰底） */}
-      <section style={{ backgroundColor: "#F5F4F0" }}>
-        <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-5">
-          <p className="text-xs tracking-widest uppercase font-medium" style={{ color: "#D4A843" }}>
-            經歷
-          </p>
-          <h2 className="text-2xl font-bold">里程碑</h2>
-          {/* TODO: 填入你的真實背景——開發年資、交易資歷、具體轉折點與里程碑 */}
-          <p className="text-sm leading-relaxed" style={{ opacity: 0.45 }}>
-            ［待補：開發背景、交易資歷、轉折點、服務過的對象類型］
-          </p>
-        </div>
-      </section>
-
-      {/* ── Section 7：CTA（深靛藍底） */}
+      {/* ── Section 5：CTA（深靛藍底） */}
       <section style={{ backgroundColor: "#1B2D5A" }}>
         <div className="max-w-2xl mx-auto px-6 sm:px-16 py-20 flex flex-col gap-6">
-          <h2 className="text-2xl font-bold" style={{ color: "#F5F4F0" }}>
-            準備把「感覺」換成「系統」了嗎？
+          <h2 className="text-2xl sm:text-3xl font-bold" style={{ color: "#F5F4F0" }}>
+            準備把困惑換成清晰了嗎？
           </h2>
           <p className="text-base leading-relaxed" style={{ color: "#F5F4F0", opacity: 0.65 }}>
             不需要想清楚所有問題再來。你只需要知道自己卡在哪裡，

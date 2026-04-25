@@ -9,7 +9,7 @@ const links = [
   { href: "/about", label: "關於軍師" },
   { href: "/services", label: "服務內容" },
   { href: "/cases", label: "合作案例" },
-  { href: "/blog", label: "策略筆記" },
+  // { href: "/blog", label: "策略筆記" }, // 暫時隱藏，待 Blog 有正式文章後恢復
 ];
 
 export default function Navbar() {
