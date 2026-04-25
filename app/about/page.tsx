@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "關於軍師｜市場軍師",
+  description:
+    "比你多走幾步路的行銷策略顧問。不賣焦慮、賣清醒——我在你腦袋還一片混亂的時候，幫你把台灣個人創業的市場方向想清楚。",
+};
+
 export default function About() {
   return (
     <main
