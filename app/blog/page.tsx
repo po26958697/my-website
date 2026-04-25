@@ -9,6 +9,15 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "innodisk-analysis",
+    category: "個股拆解",
+    date: "2026-04-25",
+    title: "宜鼎（5289）實戰拆解",
+    subtitle: "法人如何看工業儲存的護城河",
+    summary:
+      "從競爭壁壘、財務結構到風險控管，拆解宜鼎（Innodisk）的法人邏輯，建立有框架的進出場思維。",
+  },
+  {
     slug: "why-stop-loss-fails",
     category: "交易心理",
     date: "2026-04-25",

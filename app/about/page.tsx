@@ -30,6 +30,9 @@ export default function About() {
             市場不給情緒發獎金，<br />只給紀律發報酬。
           </h1>
           <p className="text-lg leading-relaxed" style={{ opacity: 0.72 }}>
+            結合 Web 開發者的邏輯嚴謹性與法人級交易紀律，致力於將複雜市場數據轉化為可執行的策略。
+          </p>
+          <p className="text-base leading-relaxed" style={{ opacity: 0.55 }}>
             這不是一句激勵格言。這是我用虧損換來的作業系統。
           </p>
         </section>
