@@ -35,6 +35,29 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  name: "市場軍師 Remi",
+                  jobTitle: "交易策略顧問",
+                  description: "法人級交易紀律與實戰策略諮詢，結合 Web 開發者邏輯嚴謹性與法人視角。",
+                  url: "https://my-website-po26958697.vercel.app",
+                },
+                {
+                  "@type": "WebSite",
+                  name: "市場軍師 Remi",
+                  url: "https://my-website-po26958697.vercel.app",
+                  inLanguage: "zh-TW",
+                },
+              ],
+            }),
+          }}
+        />
         <Navbar />
         {children}
         {/* TODO: 將 G-XXXXXXXXXX 替換為你的 GA4 Measurement ID */}
