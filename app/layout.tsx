@@ -15,8 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "市場軍師",
-  description: "不用學滿行銷，只要搞懂你的市場",
+  title: "市場軍師 Remi | 法人級交易紀律與實戰策略諮詢",
+  description:
+    "拒絕散戶思維，以極度理性的法人邏輯重構交易。市場軍師 Remi 提供深度市場分析與風險控管，助你建立穩定盈利的交易系統，翻轉虧損，重塑操盤紀律。",
+  keywords: ["市場軍師", "交易紀律", "法人視角", "投資策略", "風險控管", "Remi"],
+  verification: {
+    google: "ksHW8wxS8dLQbt8LxIe8Q2HIULflS0MLSMnyAYs3110",
+  },
 };
 
 export default function RootLayout({
