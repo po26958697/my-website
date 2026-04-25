@@ -48,16 +48,16 @@ export default function Contact() {
                 目前僅開放一對一策略諮詢，請點擊下方按鈕預約時間。
                 你只需要大概知道自己卡在哪裡——其他的，諮詢的時候一起想。
               </CardDescription>
-              <Button
-                className="mt-2 px-10 py-6 text-base font-semibold rounded-sm w-full sm:w-auto transition-opacity hover:opacity-85"
+              {/* TODO: 將 href 換成你的 Calendly 或預約工具連結 */}
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center justify-center px-10 py-6 text-base font-semibold rounded-sm w-full sm:w-auto transition-opacity hover:opacity-85"
                 style={{ backgroundColor: "#D4A843", color: "#1B2D5A" }}
-                asChild
               >
-                {/* TODO: 將 href 換成你的 Calendly 或預約工具連結 */}
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  立即預約諮詢時段
-                </a>
-              </Button>
+                立即預約諮詢時段
+              </a>
             </CardContent>
           </Card>
         </section>

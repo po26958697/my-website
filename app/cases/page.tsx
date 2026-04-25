@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -166,13 +165,13 @@ export default function Cases() {
             不用完全一樣。只要你覺得「方向不清楚、不知道從哪開始」，都可以來聊聊。
           </p>
           <div className="pt-2">
-            <Button
-              asChild
-              className="px-6 py-5 text-sm font-semibold rounded-sm"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-5 text-sm font-semibold rounded-sm transition-opacity hover:opacity-85"
               style={{ backgroundColor: "#D4A843", color: "#1B2D5A" }}
             >
-              <Link href="/contact">預約初次諮詢</Link>
-            </Button>
+              預約初次諮詢
+            </Link>
           </div>
         </section>
 

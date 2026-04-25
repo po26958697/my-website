@@ -7,7 +7,6 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -41,13 +40,13 @@ export default function Home() {
             不是叫你動快一點——是先確認跑道是對的，再開始跑。
           </p>
           <div className="pt-2">
-            <Button
-              asChild
-              className="px-8 py-6 text-base font-semibold rounded-sm"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-6 text-base font-semibold rounded-sm transition-opacity hover:opacity-85"
               style={{ backgroundColor: "#D4A843", color: "#1B2D5A" }}
             >
-              <Link href="/contact">開始策略諮詢</Link>
-            </Button>
+              開始策略諮詢
+            </Link>
           </div>
         </section>
 

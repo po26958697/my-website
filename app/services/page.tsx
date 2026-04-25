@@ -7,7 +7,6 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -112,13 +111,13 @@ export default function Services() {
               </div>
 
               <div className="pt-2">
-                <Button
-                  asChild
-                  className="px-6 py-5 text-sm font-semibold rounded-sm"
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-6 py-5 text-sm font-semibold rounded-sm transition-opacity hover:opacity-85"
                   style={{ backgroundColor: "#D4A843", color: "#1B2D5A" }}
                 >
-                  <Link href="/contact">預約諮詢</Link>
-                </Button>
+                  預約諮詢
+                </Link>
               </div>
             </CardContent>
           </Card>
